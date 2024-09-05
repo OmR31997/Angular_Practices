@@ -1,0 +1,21 @@
+h1
+{
+    padding: 0px 60px;
+    font-family: segoe UI;
+    font-style: italic;
+    color:#c7c7c7;
+    align-items: center;
+}
+span
+{
+    font-size: 60px;
+}
+
+#Cart
+{
+    padding-right:40px;
+    padding-top: 20px;
+    color:#c7c7c7;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -1,0 +1,95 @@
+header
+{
+    background-color: rgba(76, 0, 130, 0.671);
+    width: 100%; height: 80px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 0px;
+}
+
+#SideBar
+{
+    border: 2px solid white;
+    background-color: rgba(146, 68, 202, 0.425);
+}
+main
+{
+    border: 2px solid white;
+    background-color: rgba(146, 68, 202, 0.425);
+    width: 82.3%; 
+    border-radius: 20px;
+}
+.Category
+{
+    text-align: center; background-color: rgba(76, 0, 130, 0.671); border-radius: 10px; font-size: 25px; height: 29px;
+}
+
+.section
+{
+    margin: 30px 20px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 20px;    
+    background-color: rgba(76, 0, 130, 0.445);
+    width: 1006px; height: 440px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+.inner-block
+{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(76, 0, 130, 0.158);
+    width: 230px; height: 428px;
+    text-align: center;
+    transition: all 2s ease;
+}
+
+.inner-block:hover
+{
+    transform: scale(1.04);
+}
+
+p
+{
+    text-align: center;
+    line-height: 25px;
+    color: #c7c7c7;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+.btn-block > button
+{
+    background-color: rgb(66, 31, 31); 
+    border: none; 
+    width: 40px; height: 40px; 
+    border-radius: 20px;
+    margin: 0px 30px;
+}
+
+button:hover
+{
+    transform: scale(1.06);
+}
+
+button :hover
+{
+    background-color: rgb(41, 172, 41);
+}
+
+select,option
+{
+    width: 180px; height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(76, 0, 130, 0.445);
+    color: #c7c7c7;
+}

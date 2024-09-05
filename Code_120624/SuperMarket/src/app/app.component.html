@@ -1,0 +1,75 @@
+<header>
+  <app-header [Data]="Count"></app-header>
+</header>
+<div style="display: flex;">
+  <div id="SideBar" style="display: flex;justify-content: center; border-radius: 10px; padding: 50px 0px;">
+    <select name="Category" [(ngModel)]="selectedValue">
+      <option value="all">All</option>
+      <option value="cloth_1">Men's Clothing</option>
+      <option value="cloth_2">Women's Clothing</option>
+      <option value="jewel">Jewellery</option>
+      <option value="disk">Hard-Disk</option>
+    </select>
+  </div>
+  <main>
+    <div *ngIf="selectedValue ==='all' || selectedValue ==='cloth_1'">
+      <p class="cloth_1  Category">Men's Clothing</p>
+      <div class="cloth_1 section">
+        <div class="inner-block" *ngFor="let item of ClothesForMen">
+          <img src={{item.image}} alt={{item.title}} width="200" height="300">
+          <p>{{item.title}}</p>
+          <p><span>Price: ₹</span>{{item.price*70}}</p>
+          <p><span style="background-color: rgb(6, 53, 6);">Rating:{{item.rating.rate}} </span> Review:
+            {{item.rating.count}}</p>
+          <div class="btn-block"><button (click)="CartProduct()">🛒</button> <button (click)="DisCart()"
+              class="btn-block">🗑️</button></div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedValue ==='all' || selectedValue ==='jewel'">
+      <p class="jewel Category">Jewellery Collections</p>
+      <div class="jewel section">
+        <div class="inner-block" *ngFor="let item of Jwells">
+          <img src={{item.image}} alt={{item.title}} width="200" height="300">
+          <p>{{item.title}}</p>
+          <p><span>Price: ₹</span>{{item.price*70}}</p>
+          <p><span style="background-color: rgb(6, 53, 6);">Rating:{{item.rating.rate}} </span> Review:
+            {{item.rating.count}}</p>
+          <div class="btn-block"><button (click)="CartProduct()">🛒</button> <button (click)="DisCart()"
+              class="btn-block">🗑️</button></div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedValue ==='all' || selectedValue ==='disk'">
+      <p class="disk Category">External Hard-Disk</p>
+      <div class="disk section">
+        <div class="inner-block" *ngFor="let item of Disk">
+          <img src={{item.image}} alt={{item.title}} width="200" height="300">
+          <p>{{item.title}}</p>
+          <p><span>Price: ₹</span>{{item.price*70}}</p>
+          <p><span style="background-color: rgb(6, 53, 6);">Rating:{{item.rating.rate}} </span> Review:
+            {{item.rating.count}}</p>
+          <div class="btn-block"><button (click)="CartProduct()">🛒</button> <button (click)="DisCart()"
+              class="btn-block">🗑️</button></div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedValue ==='all' || selectedValue ==='cloth_2'">
+      <p class="cloth_2 Category">Women's Clothing</p>
+      <div class="cloth_2 section">
+        <div class="inner-block" *ngFor="let item of ClothesForWomen">
+          <img src={{item.image}} alt={{item.title}} width="200" height="230">
+          <p>{{item.title}}</p>
+          <p><span>Price: ₹</span>{{item.price*70}}</p>
+          <p><span style="background-color: rgb(6, 53, 6);">Rating:{{item.rating.rate}} </span> Review:
+            {{item.rating.count}}</p>
+          <div class="btn-block"><button (click)="CartProduct()">🛒</button> <button (click)="DisCart()"
+              class="btn-block">🗑️</button></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<footer>
+  <app-footer></app-footer>
+</footer>
