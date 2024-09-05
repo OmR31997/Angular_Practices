@@ -1,0 +1,33 @@
+input
+{
+    width: 516px; 
+    height: 30px; 
+    border-radius: 20px; 
+    border:none; 
+    margin:36px 29px 0px 0px; 
+    background-color: rgb(248, 237, 224);
+    font-size: 20px;
+}
+input:focus
+{
+    background-color: rgb(199, 168, 130);
+    color: white;
+}
+button
+{
+    font-size: 20px;
+    background-color: darkcyan;
+    color: white;
+    padding: 0px;
+    width: 150px;
+    height: 36px;
+    border-radius: 20px;
+}
+button:hover
+{
+    background-color: rgb(7, 216, 216);
+}
+button:active
+{
+    background-color: rgb(1, 43, 43);
+}

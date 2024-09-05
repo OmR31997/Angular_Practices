@@ -1,0 +1,8 @@
+<h1 style="text-align: center;">Parent World</h1>
+<div id="control-block" style="text-align: center">
+    <input type="text" [(ngModel)]="io_path">
+    <button (click)="Send()">Search</button>
+</div>
+<div style=" background-color: cadetblue; width: 700px; height: 500px; margin:40px 312px; border-radius: 10px;">
+    <child-root [s_path]="s_path"></child-root>
+</div>
