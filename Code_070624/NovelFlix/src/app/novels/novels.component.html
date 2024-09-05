@@ -1,0 +1,9 @@
+<div id="section">
+    <button (click)="Prev()" [disabled]="this.Index === 0">&#8249;&#8249;</button>
+    <app-novel [BookImg]="BookImgs[Index]" [Book]="Books[Index]"></app-novel>
+    <app-novel [BookImg]="BookImgs[Index+1]" [Book]="Books[Index+1]"></app-novel>
+    <app-novel [BookImg]="BookImgs[Index+2]" [Book]="Books[Index+2]"></app-novel>
+    <app-novel [BookImg]="BookImgs[Index+3]" [Book]="Books[Index+3]"></app-novel>
+    <app-novel [BookImg]="BookImgs[Index+4]" [Book]="Books[Index+4]"></app-novel>
+    <button (click)="Next()" class="next round" [disabled]="this.Index+4 === this.Books.length-1">&#8250;&#8250;</button>
+</div>
