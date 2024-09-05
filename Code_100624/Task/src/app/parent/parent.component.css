@@ -1,0 +1,57 @@
+#container
+{
+    margin: 0px 369px 0px 369px;
+    background:linear-gradient(rgba(255, 255, 255, 0.301), rgba(3, 91, 179, 0.562));
+    border-radius: 20px;
+    height: 420px;
+}
+
+#child-container
+{
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-block
+{
+    margin: 0px 45px 0px 45px;
+    align-items: center;
+    width: 510px;height: 256px;
+    border: 2px double rgb(102, 4, 102);
+    border-width: 7px;
+    border-radius: 20px;
+}
+
+.Hide
+{
+  visibility: hidden;
+}
+
+img
+{
+    margin: 0px 0px 0px 0px;
+    width: 510px;height: 256px;
+    border-radius: 20px;
+}
+
+@keyframes borderWidthChange 
+{
+  0% {
+      border-width: 2px;
+  }
+  50% {
+      border-width: 10px;
+  }
+  100% {
+      border-width: 2px;
+  }
+}
+
+/* Apply the animation to the element */
+.animated-border 
+{
+  border-style: solid;
+  border-color: black;
+  animation: borderWidthChange 2s infinite;
+}

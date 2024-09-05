@@ -1,0 +1,11 @@
+<div id="container">
+    <h1 style="text-align: center; color: white; ;">Parent Component</h1>
+    <h2 [class.Hide]="!isHide" style="text-align: center; color: white;">OH!OH! THAT COMPONENT HAS GONE</h2>
+    <div class="content-block animated-border" [class.Hide]="isHide">
+        <img src="https://pics.craiyon.com/2023-05-21/5da52929c5854ba688597717380a484b.webp" alt="webps"S>
+    </div>   
+</div>
+ 
+<div id="child-container">
+    <app-child (Called)="OnCalled($event)"></app-child>
+</div>
